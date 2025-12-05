@@ -31,7 +31,7 @@ This package also supports $\epsilon$-approximate nearest neighbour searches, wh
 [Further details of using Kd-trees with Bregman Divergences are discussed here.](https://arxiv.org/abs/2502.13425)
 
 #### Bregman&mdash;Hausdorff divergence
-The Bregman--Hausdorff divergence generalizes the Bregman divergence between two vectors to the Bregman divergence between to *sets* of vectors. The Bregman--Hausdorff divergence was introduced by Pham, Dal Poz Kouřimská, and Wagner, where they also provide algorithms for its computation. Specifically, we compute 
+The Bregman&mdash;Hausdorff divergence generalizes the Bregman divergence between two vectors to the Bregman divergence between to *sets* of vectors. The Bregman&mdash;Hausdorff divergence was introduced by Pham, Dal Poz Kouřimská, and Wagner, where they also provide algorithms for its computation. Specifically, we compute 
 $$H_{D_F}(P\|Q) = \inf \\{r\geq0 : P\subseteq\bigcup_{q\in Q}B_F(q;r)\\}$$ and $$H_{D_F}' = \inf \\{r\geq0 : P\subseteq\bigcup_{q\in Q}B'_F(q;r)\\}$$ via the shell algorithm, where $B_F(q;r)=\\{x\in \Omega\,:\, D_F(q\|x)\leq r\\}$ and $B'_F(q;r) = \\{x\in \Omega\,:\,D_F(x\|q)\leq r\\}$. Note that the directions of computations for the Bregman--Hausdorff divergences are reversed compared to the directions for the nearest neighbour searches.
 
 [The Bregman&mdash;Hausdorff divergence and shell algorithm for computation are introduced here.](https://www.mdpi.com/2504-4990/7/2/48)
