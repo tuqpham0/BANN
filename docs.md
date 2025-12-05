@@ -4,7 +4,7 @@ For $\mathbb{R}^{\text{dim}}$, the supported divergences are
    - Generalized Kullback--Leibler (KL) divergence $D_{KL}(q_m\| \bullet)$
       - Domain: $D, Q \subset \mathbb{R}^{\text{dim}}_+$
       - If the domain is restricted to $\triangle^{d-1} = \{x\in \mathbb{R}^{\text{dim}}\,:\,\sum_{i=1}^{\text{dim}}x_i, x_i > 0\}$, then this reduces to the Kullback--Leibler divergence.
-   - Reversed Kullback--Leibler divergence $D_{KL}(q_m \| \bullet)$
+   - Reversed Kullback--Leibler divergence $D_{KL}(\bullet\| q_m )$
       - Domain: $D, Q \subset \mathbb{R}^{\text{dim}}_+$.
    - Itakura--Saito (IS) divergence $D_{IS}(q_m\|\bullet)$
       - Domain: $D, Q \subset \mathbb{R}^{\text{dim}}_+$.
