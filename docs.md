@@ -37,7 +37,7 @@ print(nn_idx)
 # [ 2  9  4]]
 ```
 #### Overview
-Given a set $D = \{d_{n}\}_{n=1}^{N}$ and a set $Q = \{q_{m}\}_{m=1}^{M}$, For each $q_m$, we compute the $k$-nearest neighbours in $D$ measured by either $D_{F}(q_m\|\bullet)$ or $D_F(\bullet \|q_m)$.
+Given a set $D = \\{d_n\\}_{n=1}^N$ and a set $Q = \\{q_m\\}_{m=1}^M$, For each $q_m$, we compute the $k$-nearest neighbours in $D$ measured by either $D_F (q_m\\|\bullet)$ or $D_F(\bullet \\|q_m)$.
 
 For the Squared Euclidean distance, it is known that the search is performed in $O(N\log N)$ for each query. The SE distance is symmetric, so we do not have to consider the reversed direction of computation. For other divergences, the complexity is unknown.
 #### Parameters
@@ -58,8 +58,8 @@ For the Squared Euclidean distance, it is known that the search is performed in 
          - 'se'   :: SE distance
 #### Return
    - **nn_indices**: *numpy.ndarray*
-      - 2 dimensional array of size $(|Q|, k)$. The $(i,j)$ entry will be the index for the $j^{th}$ nearest neighbour for the $i^{th}$ query point.
-# (Approximate) Bregman--Hausdorff divergence
+      - 2 dimensional array of size $(|Q|, k)$. The $(i,j)$ entry will be the index for the $j^{th}$ nearest neighbour for the $i^{\text{th}}$ query point.
+# (Approximate) Bregman&mdash;Hausdorff divergence
 #### Example Usage
 ```
 P = np.random.rand(20, 10)
@@ -69,14 +69,14 @@ print(bhaus_div)
 # 0.841948848849059
 ```
 #### Overview
-Given two sets of vectors $P,Q$, computes the Bregman--Hausdorff divergence from $P$ to $Q$; $H_{D_{F}}(P\|Q)$
+Given two sets of vectors $P,Q$, computes the Bregman&mdash;Hausdorff divergence from $P$ to $Q$; $H_{D_{F}}(P\|Q)$
 #### Parameters
    - **P**: *numpy.ndarray*
       - 2 dimensional np.ndarrray of size $(|P|, \text{dimension})$
    - **Q**: *numpy.ndarray*
       - 2 dimensional np.ndarray of size $(|Q|, \text{dimension})$
    - **eps**: *float*, optional
-      - Error bound for search. Returned value is at most $(1+\epsilon)H_{D_F}(P\|Q)$. Default value is *eps*$=0$, corresponding to computing the exact Bregman--Hausdorff divergence from $P$ to $Q$.
+      - Error bound for search. Returned value is at most $(1+\epsilon)H_{D_F}(P\|Q)$. Default value is *eps*$=0$, corresponding to computing the exact Bregman&mdash;Hausdorff divergence from $P$ to $Q$.
    - **div**: *str*, optional
       - Choice of divergence. Default value is div = 'kl'. Currently accepted inputs are:
          - 'kl'   :: KL divergence
@@ -86,7 +86,7 @@ Given two sets of vectors $P,Q$, computes the Bregman--Hausdorff divergence from
          - 'se'   :: SE distance
 #### Return
    - **bhaus**: *float*
-      - The Bregman--Hausdorff divergence from $P$ to $Q$; $H_{D_{F}}(P\|Q)$
+      - The Bregman&mdash;Hausdorff divergence from $P$ to $Q$; $H_{D_{F}}(P\|Q)$
 
 # Test functions
 #### Overview
