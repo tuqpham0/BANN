@@ -37,7 +37,7 @@ print(nn_idx)
 # [ 2  9  4]]
 ```
 #### Overview
-Given a set $D = \\{d_n\\}_{n=1}^N$ and a set $Q = \\{q_m\\}_{m=1}^M$, For each $q_m$, we compute the $k$-nearest neighbours in $D$ measured by either $D_F (q_m\\|\bullet)$ or $D_F(\bullet \\|q_m)$.
+Given a set $D = \\{d_n\\}^N_{n=1}$ and a set $Q = \\{q_m\\}^M_{m=1}$, For each $q_m$, we compute the $k$-nearest neighbours in $D$ measured by either $D_F (q_m\\|\bullet)$ or $D_F(\bullet \\|q_m)$.
 
 For the Squared Euclidean distance, it is known that the search is performed in $O(N\log N)$ for each query. The SE distance is symmetric, so we do not have to consider the reversed direction of computation. For other divergences, the complexity is unknown.
 #### Parameters
@@ -76,7 +76,7 @@ Given two sets of vectors $P,Q$, computes the Bregman&mdash;Hausdorff divergence
    - **Q**: *numpy.ndarray*
       - 2 dimensional np.ndarray of size $(|Q|, \text{dimension})$
    - **eps**: *float*, optional
-      - Error bound for search. Returned value is at most $(1+\epsilon)H_{D_F}(P\|Q)$. Default value is *eps*$=0$, corresponding to computing the exact Bregman&mdash;Hausdorff divergence from $P$ to $Q$.
+      - Error bound for search. Returned value is at most $(1+\epsilon)\times H_{D_F}(P\|Q)$. Default value is *eps*$=0$, corresponding to computing the exact Bregman&mdash;Hausdorff divergence from $P$ to $Q$.
    - **div**: *str*, optional
       - Choice of divergence. Default value is div = 'kl'. Currently accepted inputs are:
          - 'kl'   :: KL divergence
