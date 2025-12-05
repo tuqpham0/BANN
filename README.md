@@ -35,6 +35,9 @@ The Bregman&mdash;Hausdorff divergence generalizes the Bregman divergence betwee
 $$H_{D_F}(P\|Q) = \inf \\{r\geq0 : P\subseteq\bigcup_{q\in Q}B_F(q;r)\\}$$ and $$H_{D_F}' = \inf \\{r\geq0 : P\subseteq\bigcup_{q\in Q}B'_F(q;r)\\}$$ via the shell algorithm, where $B_F(q;r)=\\{x\in \Omega\,:\, D_F(q\|x)\leq r\\}$ and $B'_F(q;r) = \\{x\in \Omega\,:\,D_F(x\|q)\leq r\\}$. Note that the directions of computations for the Bregman--Hausdorff divergences are reversed compared to the directions for the nearest neighbour searches.
 
 [The Bregman&mdash;Hausdorff divergence and shell algorithm for computation are introduced here.](https://www.mdpi.com/2504-4990/7/2/48)
+
+#### Further details
+For further details and example uses, see the [documentation](docs.md).
 ## Requirements
 ### Python Version
 BANN requires Python >=3.11.
