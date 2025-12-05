@@ -41,6 +41,8 @@ BANN requires Python >=3.11.
 ### Dependencies
    - [Numpy](https://numpy.org/)
 ## Installation
+
 ## Feedback
 Bug reports, pull requests after forking, and other questions may be sent to the maintainer: tuyen.pham@ufl.edu
 ## Copyright and License
+See [Copyright](COPYRIGHT) and [License](LICENSE) for copyright and license information.
