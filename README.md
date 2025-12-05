@@ -21,7 +21,8 @@ Currently, this package supports the following divergences:
 Additional decomposable divergences can be simply added to the source code, and passing a divergence from Python is a planned implementation.
 
 ### Details
-Let $P = \\{p_n\\}^N_{n=1}$, $Q = \\{q_m\\}^M_{m=1}$, and $D_F$ be a decomposable Bregman divergence.
+Let $D_F:\Omega\times\Omega\to [0,\infty]$ be a decomposable Bregman divergence and let $P = \\{p_n\\}^N_{n=1}$, $Q = \\{q_m\\}^M_{m=1}$ be subsets of $\Omega$.
+
 #### Bregman $k$-nn search
 For $q\in Q$, the Bregman $k$-nearest neighbour search returns the ordered list of indices $(x_1,x_2,\dots,x_k)$, such that $D_F(q\\|p_{x_1})\leq D_F(q\\|p_{x_2})\leq\cdots\leq D_F(q\\|p_{x_k})$ and $D_F(q\\|p_{x_k})\leq D_F(q\\|p_{\ell})$ for all $\ell\notin\\{x_{1},x_{2},\dots,x_{k}\\}$. As Bregman divergences are rarely symmetric, we can reverse the arguments as necessary.
 
