@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+include bann.pyx
+recursive-include cpp_src *.cpp *.h
+global-include *.pyx *.cpp *.h

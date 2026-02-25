@@ -1,0 +1,13 @@
+Collecting bann
+  Using cached bann-0.0.1.tar.gz (164 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: numpy in /opt/homebrew/lib/python3.14/site-packages (from bann) (2.4.2)
+Building wheels for collected packages: bann
+  Building wheel for bann (pyproject.toml): started
+  Building wheel for bann (pyproject.toml): finished with status 'error'
+Failed to build bann
