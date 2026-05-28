@@ -7,8 +7,9 @@
 
 #include <math.h>
 
+#include "ANN.h"
+
 namespace ann_namespace {
-  #include "ANN.h"
 }
 
 extern "C" {

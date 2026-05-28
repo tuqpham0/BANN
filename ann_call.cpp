@@ -7,9 +7,9 @@
 
 #include <math.h>
 
-namespace ann_namespace {
-  #include "ANN.h"
+#include "ANN.h"
 
+namespace ann_namespace {
   extern "C++" {
     void bann_search(double *Data, int *NData, double *Query, int *NQuery, int *Dim,
                     int *K, int *Indx, double *Eps, int *DivChoice)
