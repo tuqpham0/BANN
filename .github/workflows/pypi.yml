@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   build-and-publish:
-    environment: pypi_bann
+    environment: PyPI_bann
     runs-on: ubuntu-latest
 
     steps:
